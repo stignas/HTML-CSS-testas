@@ -16,13 +16,21 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <title>NFTlanding</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="wrapper flex-container">
       <img src="./img/logo.svg" alt="" />
-      <i class="fa-solid fa-bars"></i>
+      <div class="dropdown">
+        <i class="fa-solid fa-bars"></i>
+        <nav class="dropdown-content">
+          <a href="#">Features</a>
+          <a href="#">About</a>
+          <a href="#">Launch</a>
+          <a href="#">Sign Up</a>
+        </nav>
+      </div>
       <nav>
         <a href="#">Features</a>
         <a href="#">About</a>
@@ -76,13 +84,15 @@
 
       <!-- SECTION 4 // NFT CARDS-->
       <section class="sec4 wrapper">
-        <h2>LE Super Rare Auction</h2>
-        <p>
-          We have released four limited edition NFTs early which can be bid on
-          via <a id="opensea" href="#">OpenSea</a>.
-        </p>
+        <article id="auction">
+          <h2>LE Super Rare Auction</h2>
+          <p>
+            We have released four limited edition NFTs early which can be bid on
+            via <a id="opensea" href="#">OpenSea</a>.
+          </p>
+        </article>
         <!-- NFT CARDS-->
-        <div class="nfts">
+        <div class="nfts flex-container">
           <!-- Card 1-->
           <div class="card">
             <img src="./img/ntfs/ntf-1.svg" alt="" />
@@ -98,7 +108,7 @@
                   <h2>2.99 ETH</h2>
                 </div>
               </article>
-              <article class="flex-container">
+              <article class="flex-container numbers">
                 <p>#12983</p>
                 <p>1 day left</p>
               </article>
@@ -177,7 +187,7 @@
           <h1>An NFT like no other</h1>
           <p>
             Don't miss out on the release of our new NFT. Sign up below to
-            receive updates when we go live.
+            receive updates<span id="golive"> when we go live</span>.
           </p>
           <a href="#" class="btn">Sign Up</a>
         </div>
@@ -185,62 +195,61 @@
           <img src="./img/upsell-footer-image.svg" alt="background" />
         </div>
       </section>
-
-      <!-- FOOTER -->
-      <footer class="wrapper">
-        <section>
-          <!--Left element // Icons-->
-          <div>
-            <img src="./img/logo.svg" alt="" />
-            <p>Exclusive NFT Collection</p>
-            <p>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-tiktok"></i>
-            </p>
-          </div>
-
-          <!--Right Element // Footer navigation-->
-          <nav class="grid-container footer-nav">
-            <div class="list">
-              <h5>About</h5>
-              <ul>
-                <li><a href=""> About</a></li>
-                <li><a href=""> Terms</a></li>
-                <li><a href=""> Legal</a></li>
-              </ul>
-            </div>
-            <div class="list">
-              <h5>NFT</h5>
-              <ul>
-                <li><a href=""> OpenSea</a></li>
-                <li><a href=""> Maker</a></li>
-                <li><a href=""> Learn</a></li>
-              </ul>
-            </div>
-            <div class="list">
-              <h5>Contact</h5>
-              <ul>
-                <li><a href=""> Press</a></li>
-                <li><a href=""> Support</a></li>
-              </ul>
-            </div>
-            <div class="list">
-              <h5>Social</h5>
-              <ul>
-                <li><a href=""> Twitter</a></li>
-                <li><a href=""> Instagram</a></li>
-              </ul>
-            </div>
-          </nav>
-        </section>
-        <!-- Copyright -->
-        <section class="flex-container copyright">
-          <p>&COPY; Copyright 2022 NFTlanding</p>
-          <p>Launching August 2022</p>
-        </section>
-      </footer>
     </main>
+    <!-- FOOTER -->
+    <footer class="wrapper">
+      <section class="flex-container">
+        <!--Left element // Icons-->
+        <div>
+          <img src="./img/logo.svg" alt="" />
+          <p>Exclusive NFT Collection</p>
+          <p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </p>
+        </div>
+
+        <!--Right Element // Footer navigation-->
+        <nav class="grid-container footer-nav">
+          <div class="list">
+            <h5>About</h5>
+            <ul>
+              <li><a href=""> About</a></li>
+              <li><a href=""> Terms</a></li>
+              <li><a href=""> Legal</a></li>
+            </ul>
+          </div>
+          <div class="list">
+            <h5>NFT</h5>
+            <ul>
+              <li><a href=""> OpenSea</a></li>
+              <li><a href=""> Maker</a></li>
+              <li><a href=""> Learn</a></li>
+            </ul>
+          </div>
+          <div class="list">
+            <h5>Contact</h5>
+            <ul>
+              <li><a href=""> Press</a></li>
+              <li><a href=""> Support</a></li>
+            </ul>
+          </div>
+          <div class="list">
+            <h5>Social</h5>
+            <ul>
+              <li><a href=""> Twitter</a></li>
+              <li><a href=""> Instagram</a></li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+      <!-- Copyright -->
+      <section class="flex-container copyright">
+        <p>&COPY; Copyright 2022 NFTlanding</p>
+        <p>Launching August 2022</p>
+      </section>
+    </footer>
   </body>
 </html>
